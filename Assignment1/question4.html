@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="Male" id="male">
+        <label for="Male">Male</label>
+        <input type="radio" name="Female" id="female">
+        <label for="Male">Female</label>
+        <br><br>
+        <label for="Country">Country:</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+        </select>
+        <br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="50" rows="5" required></textarea>
+        <br><br>
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">Subscribe?</label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Feedback Form</h1>
+    <form action="submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Write your name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Write your email" required>
+        <br><br>
+        <label for="feedback">Message:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="40" required></textarea>
+        <br><br>
+        <label for="rating">Rate us out of 5</label><br>
+        <input type="radio" name="" id=""><label for="">1</label><br>
+        <input type="radio" name="" id=""><label for="">2</label><br>
+        <input type="radio" name="" id=""><label for="">3</label><br>
+        <input type="radio" name="" id=""><label for="">4</label><br>
+        <input type="radio" name="" id=""><label for="">5</label>
+        <br><br>
+        <input type="submit" value="Send your message!">
+    </form>
+</body>
+</html>
