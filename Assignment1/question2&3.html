@@ -4,98 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px 0;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        th, td {
+            border: 1px solid #888;
+            padding: 8px 12px;
+            text-align: center;
+        }
+        tbody td:first-child {
+            border: none;
+        }       
+    </style>
 </head>
 <body>
     <div>
-    <h1>Question 2</h1>
-    <p><a href="">Today</a> is the 9th October and 2 <sup>2</sup>=4 always.</p>
-    <p>&copy;</p>
-    <p>&trade;</p>
+        <h1>Question 2</h1>
+        <p><a href="">Today</a> is the 9th October and 2 <sup>2</sup>=4 always.</p>
+        <p>&copy;</p>
+        <p>&trade;</p>
     </div>
 
     <div>
         <h1>Question 3</h1>
         <table>
+            <caption>Student Information</caption>
             <thead>
-                Student Information
                 <tr>
-                    <th>Info</th>
-                    <th>Name</th>
-                    <th>Address
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>City</th>
-                                    <th>House</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </th>
+                    <th rowspan="6" style="vertical-align: middle;">Info</th>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Address</th>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <th>House</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th></th>
-                    <th>A</th>
-                    <th>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Delhi</td>
-                                    <td>1</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </th>
+                    <td></td>
+                    <td>A</td>
+                    <td>Delhi</td>
+                    <td>1</td>
                 </tr>
-
                 <tr>
-                    <th></th>
-                    <th>B</th>
-                    <th>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Mumbai</td>
-                                    <td>2</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </th>
+                    <td></td>
+                    <td>B</td>
+                    <td>Mumbai</td>
+                    <td>2</td>
                 </tr>
-
                 <tr>
-                    <th></th>
-                    <th>C</th>
-                    <th>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Kolkata</td>
-                                    <td>3</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </th>
+                    <td></td>
+                    <td>C</td>
+                    <td>Kolkata</td>
+                    <td>3</td>
                 </tr>
-
                 <tr>
-                    <th></th>
-                    <th>D</th>
-                    <th>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Pune</td>
-                                    <td>4</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </th>
+                    <td></td>
+                    <td>D</td>
+                    <td>Pune</td>
+                    <td>4</td>
                 </tr>
             </tbody>
         </table>
     </div>
-
 </body>
 </html>
